@@ -52,10 +52,10 @@
             </a>
 
             <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-              <button type="button" class="btn btn-outline-dark">
-              
-                <a href="./Login/login-en.html" class="btn-outline-dark rounded text-decoration-none">Log In</a>
-              
+              <button type="button" class="btn btn-outline-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom">
+
+                Log In
+
               </button>
             
               <div class="btn-group" role="group">
@@ -68,12 +68,36 @@
               </div>
             </div>
 
+            <div class="offcanvas offcanvas-bottom" tabindex="1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+                <div class="offcanvas-header">
+                    <h3 class="offcanvas-title" id="offcanvasBottomLabel">Login</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body small">
+                    <form class="mx-auto row g-3" style="width: 50%;">
+
+                      <div class="col-12 form-floating">
+                        <input type="email" class="form-control" id="emailInput" placeholder="example@example.com">
+                        <label for="emailInput">Email</label>
+                      </div>
+              
+                      <div class="col-12 form-floating">
+                          <input type="password" class="form-control" id="passwordInput" placeholder="password">
+                          <label for="passwordInput">Password</label>
+                      </div>
+
+                      <button class="mx-auto btn btn-outline-dark" type="submit" style="width: 98.5%;">Login</a></button>
+
+                    </form>
+                </div>
+            </div>
+
         </div>
     </nav>
 
     <div class="collapse sticky-top" id="collapseContent">
         <div class="card card-body text-center" style="background-color: #FFFDD0; "> 
-            <a href="#carouselExampleControls" style="text-decoration: none;" class="btn text-black">    
+            <a href="#" style="text-decoration: none;" class="btn text-black">    
                 Home
             </a>
             <a href="./Prices/all-flght-en.html" style="text-decoration: none;" class="btn text-black">
